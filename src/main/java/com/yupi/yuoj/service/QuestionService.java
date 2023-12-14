@@ -19,35 +19,35 @@ public interface QuestionService extends IService<Question> {
     /**
      * 校验
      *
-     * @param post
+     * @param question
      * @param add
      */
-    void validQuestion(Question post, boolean add);
+    void validQuestion(Question question, boolean add);
 
     /**
      * 获取查询条件
      *
-     * @param postQueryRequest
+     * @param questionQueryRequest
      * @return
      */
-    QueryWrapper<Question> getQueryWrapper(QuestionQueryRequest postQueryRequest);
+    QueryWrapper<Question> getQueryWrapper(QuestionQueryRequest questionQueryRequest);
     
 
     /**
      * 获取问题封装
      *
-     * @param post
+     * @param question
      * @param request
      * @return
      */
-    QuestionVO getQuestionVO(Question post, HttpServletRequest request);
+    QuestionVO getQuestionVO(Question question, HttpServletRequest request);
 
     /**
      * 分页获取问题封装
      *
-     * @param postPage
+     * @param questionPage
      * @param request
      * @return
      */
-    Page<QuestionVO> getQuestionVOPage(Page<Question> postPage, HttpServletRequest request);
+    Page<QuestionVO> getQuestionVOPage(Page<Question> questionPage, HttpServletRequest request);
 }
