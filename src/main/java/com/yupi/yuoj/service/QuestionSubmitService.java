@@ -2,17 +2,12 @@ package com.yupi.yuoj.service;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.yupi.yuoj.model.dto.question.QuestionQueryRequest;
-import com.yupi.yuoj.model.dto.questionsubmit.QuestionSubmitAddRequest;
-import com.yupi.yuoj.model.dto.questionsubmit.QuestionSubmitQueryRequest;
-import com.yupi.yuoj.model.entity.Question;
+import com.yupi.yuoj.model.dto.questionSubmit.QuestionSubmitAddRequest;
+import com.yupi.yuoj.model.dto.questionSubmit.QuestionSubmitQueryRequest;
 import com.yupi.yuoj.model.entity.QuestionSubmit;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.yupi.yuoj.model.entity.User;
 import com.yupi.yuoj.model.vo.QuestionSubmitVO;
-import com.yupi.yuoj.model.vo.QuestionVO;
-
-import javax.servlet.http.HttpServletRequest;
 
 /**
 * @author jingkaizhang

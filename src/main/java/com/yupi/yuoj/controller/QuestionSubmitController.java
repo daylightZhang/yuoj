@@ -1,16 +1,12 @@
 package com.yupi.yuoj.controller;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.yupi.yuoj.annotation.AuthCheck;
 import com.yupi.yuoj.common.BaseResponse;
 import com.yupi.yuoj.common.ErrorCode;
 import com.yupi.yuoj.common.ResultUtils;
-import com.yupi.yuoj.constant.UserConstant;
 import com.yupi.yuoj.exception.BusinessException;
-import com.yupi.yuoj.model.dto.question.QuestionQueryRequest;
-import com.yupi.yuoj.model.dto.questionsubmit.QuestionSubmitAddRequest;
-import com.yupi.yuoj.model.dto.questionsubmit.QuestionSubmitQueryRequest;
-import com.yupi.yuoj.model.entity.Question;
+import com.yupi.yuoj.model.dto.questionSubmit.QuestionSubmitAddRequest;
+import com.yupi.yuoj.model.dto.questionSubmit.QuestionSubmitQueryRequest;
 import com.yupi.yuoj.model.entity.QuestionSubmit;
 import com.yupi.yuoj.model.entity.User;
 import com.yupi.yuoj.model.vo.QuestionSubmitVO;

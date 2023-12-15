@@ -6,16 +6,13 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.yupi.yuoj.common.ErrorCode;
 import com.yupi.yuoj.constant.CommonConstant;
 import com.yupi.yuoj.exception.BusinessException;
-import com.yupi.yuoj.model.dto.question.QuestionQueryRequest;
-import com.yupi.yuoj.model.dto.questionsubmit.QuestionSubmitAddRequest;
-import com.yupi.yuoj.model.dto.questionsubmit.QuestionSubmitQueryRequest;
+import com.yupi.yuoj.model.dto.questionSubmit.QuestionSubmitAddRequest;
+import com.yupi.yuoj.model.dto.questionSubmit.QuestionSubmitQueryRequest;
 import com.yupi.yuoj.model.entity.Question;
 import com.yupi.yuoj.model.entity.QuestionSubmit;
 import com.yupi.yuoj.model.entity.User;
 import com.yupi.yuoj.model.enums.QuestionSubmitStatusEnum;
 import com.yupi.yuoj.model.vo.QuestionSubmitVO;
-import com.yupi.yuoj.model.vo.QuestionVO;
-import com.yupi.yuoj.model.vo.UserVO;
 import com.yupi.yuoj.service.QuestionService;
 import com.yupi.yuoj.service.QuestionSubmitService;
 import com.yupi.yuoj.mapper.QuestionSubmitMapper;
@@ -24,16 +21,11 @@ import com.yupi.yuoj.utils.SqlUtils;
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.lang3.ObjectUtils;
 import org.apache.commons.lang3.StringUtils;
-import org.springframework.aop.framework.AopContext;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
-import javax.servlet.http.HttpServletRequest;
 import java.util.List;
-import java.util.Map;
 import java.util.Objects;
-import java.util.Set;
 import java.util.stream.Collectors;
 
 /**
