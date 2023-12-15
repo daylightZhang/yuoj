@@ -1,13 +1,6 @@
-package com.yupi.yuoj.model.dto.questionsubmit;
+package com.yupi.yuoj.model.dto.questionSubmit;
 
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableField;
-import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
-
-import java.io.Serializable;
-import java.util.Date;
 
 /**
  * 问题提交添加请求
